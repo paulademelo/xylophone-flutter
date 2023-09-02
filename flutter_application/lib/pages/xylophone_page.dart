@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
@@ -76,7 +74,7 @@ class _XylophonePageState extends State<XylophonePage> {
           if (isXylophone) {
             player.play(AssetSource('notes/note$noteNumber.wav'));
           } else {
-            player.play(AssetSource(
+            player.play(UrlSource(
                 'www.myinstants.com/pt/instant/risadinha-de-ladrao-8117/utm?_source=copy&utm_medium=share'));
           }
         },
